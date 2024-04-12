@@ -1,0 +1,25 @@
+﻿<Window x:Class="RNGsus.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RNGsus"
+        mc:Ignorable="d"
+        Title="RNGsus" Height="250" Width="250" Icon="pack://application:,,,/rngsus-icon.ico" WindowStyle="None" ResizeMode="CanMinimize" Background="#FF252525">
+    <Grid>
+        <Border MouseDown="TitleBar_MouseDown" Height="40" VerticalAlignment="Top" Background="#FF1D1D1D">
+            <Grid HorizontalAlignment="Stretch">
+                <TextBlock Text="RNGsus" VerticalAlignment="Center" Foreground="White" Margin="10,0" HorizontalAlignment="Left"/>
+
+                <!-- Close Button -->
+                <Button x:Name="CloseButton" Width="30" Height="30" HorizontalAlignment="Right" VerticalAlignment="Center" 
+                        Background="Red" Foreground="White" Content="X" BorderThickness="0" 
+                        Click="CloseButton_Click"/>
+            </Grid>
+        </Border>
+        <Grid Margin="0,40,0,0" Height="144" VerticalAlignment="Top">
+            <TextBlock Name="BlessedValueBtn" Text="100" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="64" Foreground="White"/>
+        </Grid>
+        <Button Content="Random" Margin="10,0,10,10" FontSize="32" Height="61" VerticalAlignment="Bottom" Click="BlessedValueBtn_Click" Foreground="White" Background="#FF484848"/>
+    </Grid>
+</Window>

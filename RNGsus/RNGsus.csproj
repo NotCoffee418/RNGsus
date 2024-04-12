@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>rngsus-icon.ico</ApplicationIcon>
+
+	<PublishSingleFile>true</PublishSingleFile>
+	<SelfContained>false</SelfContained>
+	<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="rngsus-icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="rngsus-icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="rngsus-icon.png" />
+  </ItemGroup>
+
+</Project>
